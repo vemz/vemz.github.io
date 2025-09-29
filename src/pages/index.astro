@@ -11,9 +11,29 @@ import Layout from '../layouts/Layout.astro';
       <a href="/about" class="no-underline text-black hover:text-[#6E0B14] transition-colors duration-300 text-center">about</a>
     </nav>
 
-    {/* Nom au centre */}
-    <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center">
-      <h1 class="text-7xl inline-block">vadim hemzellec-davidson</h1>
+    {/* Section principale avec photo et texte */}
+    <div class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl mx-auto px-8">
+      <div class="flex items-center gap-16">
+        {/* Photo à gauche */}
+        <div class="profile-image-container flex-shrink-0">
+          <img
+            src="/images/vhd.jpg"
+            alt="Vadim Hemzellec-Davidson"
+            class="w-[24rem] h-[24rem] rounded-full object-cover border-4 border-[#6E0B14] transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+        
+        {/* Texte à droite */}
+        <div class="flex flex-col items-start">
+          <div class="text-left">
+            <h1 class="text-6xl font-light mb-2">vadim</h1>
+            <h1 class="text-6xl font-light mb-8">hemzellec-davidson</h1>
+          </div>
+          <p class="text-2xl text-gray-600 font-light">
+            MSc Data Science @ École Polytechnique｜Engineering Student @ Télécom SudParis
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </Layout>
