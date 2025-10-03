@@ -31,7 +31,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="mb-12 sm:mb-16 md:mb-20">
         <h3 class="text-2xl sm:text-3xl md:text-4xl font-light mb-4 sm:mb-6 text-[#6E0B14]">About me</h3>
         <p class="text-base sm:text-lg leading-relaxed text-justify text-gray-700">
-          I am a French student pursuing a Master of Science in Data Science at École Polytechnique (IP Paris), with a strong mathematical foundation from preparatory classes (MPSI-MP*) and current studies in Applied Mathematics and Computer Science at Télécom SudParis. I am currently seeking a 5-6 month internship in quantitative finance starting between April and June 2025. Beyond academics, I am passionate about rap, basketball, and poker, and I have held leadership roles as class representative and association president, focusing on team-building and conflict resolution.
+          I am a French student native of Metz pursuing a Master of Science in Data Science at École Polytechnique (IP Paris), with a strong mathematical foundation from preparatory classes and current studies in Applied Mathematics and Computer Science at both École Polytechnique and Télécom SudParis. I am currently seeking a 4-6 month internship in Data Science / Machine Learning or any other related field starting between April and June 2025. Beyond academics, I am passionate about music, as I had the opportunity to be the sound manager of a video club in 2024, which also developed my passion for multimedia creation, and am a big sports enthusiast, practicing tennis since childhood and enjoying watching various sports, especially football, formula 1 and tennis. Feel free to reach out to me via LinkedIn, email or phone for any opportunities or collaborations!
         </p>
       </div>
 
@@ -43,6 +43,11 @@ import Layout from '../layouts/Layout.astro';
           {/* Experience 1 */}
           <div class="p-4 sm:p-5 md:p-6 border-2 border-[#6E0B14] rounded-lg transition-all duration-300 hover:bg-[#6E0B14] hover:bg-opacity-5 hover:shadow-lg">
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+              {/* Logo */}
+              <div class="flex-shrink-0 w-20 sm:w-24 md:w-28 flex items-center justify-center mx-auto sm:mx-0">
+                <img src="/images/logo_ba.png" alt="Blockchain AkademIA" class="h-16 sm:h-18 md:h-20 w-auto object-contain" />
+              </div>
+              
               {/* Contenu */}
               <div class="flex-grow">
                 <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3 gap-1">
@@ -50,18 +55,21 @@ import Layout from '../layouts/Layout.astro';
                     href="https://www.blockchainakademia.fr" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
                     Blockchain AkademIA - Internship
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">Jun 2025 - Aug 2025</span>
                 </div>
                 <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>Upcoming internship at a blockchain education and consulting firm</li>
+                  <li>Contributed to the regional democratization of blockchain and AI by supporting the integration of a new
+solution within the company and leveraging N8N for automation workflows.</li>
                 </ul>
-                <div class="text-xs sm:text-sm text-gray-600">
-                  <span class="font-medium text-[#6E0B14]">Skills:</span> Blockchain, Web3, Smart Contracts
-                </div>
               </div>
             </div>
           </div>
@@ -81,18 +89,21 @@ import Layout from '../layouts/Layout.astro';
                     href="https://www.aerow.group" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
                     Aerow - Internship
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">Jun 2024 - Jul 2024</span>
                 </div>
                 <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>Developed a Python tool to analyze and visualize risk data for the aeronautics industry, improving decision-making processes</li>
+                  <li>Conducted an inventory of potential Research Tax Credit (CIR) eligible topics across all areas of expertise
+at the company.</li>
                 </ul>
-                <div class="text-xs sm:text-sm text-gray-600">
-                  <span class="font-medium text-[#6E0B14]">Skills:</span> Python, Data Analysis, Visualization
-                </div>
               </div>
             </div>
           </div>
@@ -119,15 +130,30 @@ import Layout from '../layouts/Layout.astro';
                     href="https://www.ip-paris.fr/education/masters/mention-mathematiques-appliquees-statistique/master-year-2-data-science" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
-                    École Polytechnique, IP Paris
+                    École Polytechnique
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">2025 - Present</span>
                 </div>
-                <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
+                  <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
                   <li>Master of Science (M2) in Data Science</li>
-                  <li><span class="font-medium text-[#6E0B14]">Relevant Coursework:</span> Machine Learning, Deep Learning, Reinforcement Learning, Statistical Learning, Optimization, High-Dimensional Statistics</li>
+                  <li><span class="font-medium text-[#6E0B14]">Relevant Coursework:</span> Advanced learning for text and graph data (
+                    <a href="https://www.master-mva.com/cours/cat-advanced-learning-for-text-and-graph-data-altegrad/" target="_blank" rel="noopener noreferrer" class="text-[#6E0B14] hover:text-[#8B1520] inline-flex items-center">
+                      ALTEGRAD - MVA
+                      <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  ), Deep Learning, Machine Learning, Optimization, Reinforcement Learning, Representation Learning, AI for
+                  sound</li>
                 </ul>
               </div>
             </div>
@@ -148,15 +174,21 @@ import Layout from '../layouts/Layout.astro';
                     href="https://www.telecom-sudparis.eu" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
                     Télécom SudParis
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">2023 - Present</span>
                 </div>
                 <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
                   <li>Engineering Degree in Applied Mathematics and Computer Science</li>
-                  <li><span class="font-medium text-[#6E0B14]">Relevant Coursework:</span> Probability, Statistics, Numerical Analysis, Algorithms, Data Structures, Databases, Networks</li>
+                  <li><span class="font-medium text-[#6E0B14]">Relevant Coursework:</span> Machine Learning, Continuous Optimization for Machine Learning, Stochastic
+Processes, Bayesian Inference in Markov Models — HMM, Particle Filtering, Applied Statistics</li>
                 </ul>
               </div>
             </div>
@@ -177,14 +209,19 @@ import Layout from '../layouts/Layout.astro';
                     href="https://www.prepas-fabert.com/cpge/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
                     Lycée Fabert, Metz
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">2021 - 2023</span>
                 </div>
                 <ul class="list-disc list-outside ml-5 space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>Classes Préparatoires aux Grandes Écoles (CPGE) - MPSI then MP* (Mathematics and Physics)</li>
+                  <li>Classes Préparatoires aux Grandes Écoles (CPGE) - MPSI / MP* (Mathematics and Physics)</li>
                   <li><span class="font-medium text-[#6E0B14]">Focus:</span> Advanced Mathematics, Physics, Computer Science - Intensive preparation for competitive entrance exams to French Grandes Écoles</li>
                 </ul>
               </div>
@@ -206,9 +243,14 @@ import Layout from '../layouts/Layout.astro';
                     href="https://dualdiploma.org" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors"
+                    class="text-lg sm:text-xl md:text-2xl font-medium text-[#6E0B14] hover:text-[#8B1520] transition-colors inline-flex items-center"
                   >
                     Somerset Virtual Academy (Academica Dual Diploma)
+                    <svg class="ml-2 w-4 h-4 sm:w-5 sm:h-5 text-[#6E0B14] hover:text-[#8B1520]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M14 3h7v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M10 14L21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M21 21H3V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </a>
                   <span class="text-sm text-gray-500 font-medium whitespace-nowrap">2021</span>
                 </div>
