@@ -1,5 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+// Build a cache-busted URL for the CV based on the file modification time
+const cvFilePath = path.resolve('./public/cv.pdf');
+let cvUrl = '/cv.pdf';
+try {
+  const stats = fs.statSync(cvFilePath);
+  // use mtime in milliseconds (rounded) as a simple version token
+  cvUrl = `/cv.pdf?v=${Math.floor(stats.mtimeMs)}`;
+} catch (err) {
+  // If file doesn't exist or can't be read, fall back to the plain path
+  cvUrl = '/cv.pdf';
+}
 ---
 <Layout title="about">
   <div class="min-h-screen w-full">
@@ -19,7 +33,7 @@ import Layout from '../layouts/Layout.astro';
       {/* Bouton Download Resume */}
       <div class="flex justify-center mb-8 sm:mb-12 md:mb-16">
         <a 
-          href="/cv.pdf" 
+          href={cvUrl} 
           target="_blank"
           class="inline-block px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-[#6E0B14] text-white rounded-lg hover:bg-[#8B1520] transition-all duration-300 hover:scale-105 hover:shadow-lg"
         >
